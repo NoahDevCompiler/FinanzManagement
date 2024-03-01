@@ -1,11 +1,11 @@
 ﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:63546",
-      "sslPort": 44383
+      "applicationUrl": "http://localhost:37111",
+      "sslPort": 44342
     }
   },
   "profiles": {
@@ -14,7 +14,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5033",
+      "applicationUrl": "http://localhost:5215",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -24,7 +24,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7241;http://localhost:5033",
+      "applicationUrl": "https://localhost:7115;http://localhost:5215",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elkor\\Desktop\\FM\\FM_API\\FM_API.csproj": {}
+    "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elkor\\Desktop\\FM\\FM_API\\FM_API.csproj": {
+    "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elkor\\Desktop\\FM\\FM_API\\FM_API.csproj",
+        "projectUniqueName": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj",
         "projectName": "FM_API",
-        "projectPath": "C:\\Users\\elkor\\Desktop\\FM\\FM_API\\FM_API.csproj",
+        "projectPath": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj",
         "packagesPath": "C:\\Users\\elkor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elkor\\Desktop\\FM\\FM_API\\obj\\",
+        "outputPath": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\elkor\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -41,16 +41,28 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             }
           },
           "imports": [
@@ -72,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
