@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj": {}
+    "C:\\Users\\elkor\\Documents\\Projects\\C-SHARP\\FM\\FM_API\\FM_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj": {
+    "C:\\Users\\elkor\\Documents\\Projects\\C-SHARP\\FM\\FM_API\\FM_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj",
+        "projectUniqueName": "C:\\Users\\elkor\\Documents\\Projects\\C-SHARP\\FM\\FM_API\\FM_API.csproj",
         "projectName": "FM_API",
-        "projectPath": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\FM_API.csproj",
+        "projectPath": "C:\\Users\\elkor\\Documents\\Projects\\C-SHARP\\FM\\FM_API\\FM_API.csproj",
         "packagesPath": "C:\\Users\\elkor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elkor\\Documents\\Projects\\Node\\FM\\FM_API\\obj\\",
+        "outputPath": "C:\\Users\\elkor\\Documents\\Projects\\C-SHARP\\FM\\FM_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\elkor\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"

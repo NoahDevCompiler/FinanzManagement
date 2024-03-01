@@ -14,7 +14,7 @@
     });
 
     const inTransaktions = computed(() => {
-        if(!transactions.value) return nulls
+        if(!transactions.value) return null
 
         const filteredTrans = transactions.value.filter((e) => e.startDate && e.transactionValue >= 0);
         return filteredTrans.sort((a,b) => {
