@@ -1,0 +1,66 @@
+@use 'sass:color';
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+:root{
+    scroll-behavior: smooth;
+
+    /* redefine theme colors for dark theme */
+    $primary: #e6d8f1;
+    $secondary: #53366B;
+    $success: #9930ee;
+    $dark: #996BC0;
+    
+    $theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "danger": $danger,
+        "info": $indigo,
+        "dark": $dark,
+        "light": $light,
+    );
+
+    /* redefine theme color variables */
+    @each $color, $value in $theme-colors {
+        --#{$variable-prefix}#{$color}: #{$value};
+    }
+
+    /* redefine theme color rgb vars (used for bg- colors) */
+    $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+    @each $color, $value in $theme-colors-rgb {
+        --#{$variable-prefix}#{$color}-rgb: #{$value};
+    }
+
+    $body-color: #F1F0F3;
+    $body-bg: #251d2d;
+    $border-color: color.adjust($success, $lightness: -20%);
+    
+    --#{$variable-prefix}body-color: #{$body-color};
+    --#{$variable-prefix}body-bg: #{$body-bg};
+    --#{$variable-prefix}border-color: #{$border-color};
+
+    // input
+    $input-bg:                          color.adjust($body-bg, $lightness:  7%);
+    $input-disabled-bg:                 color.adjust($body-bg, $lightness:  -10%);
+    $input-color:                       $body-color;
+    $input-placeholder-color:           color.adjust($body-color, $lightness:  -60%);
+    $input-plaintext-color:             $body-color;
+
+    // card
+    $card-border-color:                 $border-color;
+    $card-bg:                           color.adjust($body-bg, $lightness:  -1%);
+
+    // navbar
+    $navbar-light-color:                $body-color;
+    $navbar-light-hover-color:          color.adjust($primary, $lightness:  50%);
+    $navbar-light-active-color:         color.adjust($primary, $lightness:  20%);
+    $navbar-light-disabled-color:       color.adjust($primary, $lightness: -30%);
+    $navbar-light-icon-color:           $body-color;
+    $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    $navbar-light-toggler-border-color: color.adjust($primary, $lightness:  75%);
+    $navbar-light-brand-color:          $body-color;
+    $navbar-light-brand-hover-color:    $navbar-light-active-color;
+
+    @import "../../node_modules/bootstrap/scss/bootstrap";
+}
