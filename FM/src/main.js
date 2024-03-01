@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import './assets/main.css'  
+import '@vuepic/vue-datepicker/dist/main.css'
 
-createApp(App).mount('#app')
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router.js'
+
+import { checkAuth } from '@/api/requests.js'
+
+checkAuth();
+
+createApp(App).use(router).mount('#app')
