@@ -37,16 +37,6 @@ CREATE TABLE `tbl_saving` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tbl_saving`
---
-
-LOCK TABLES `tbl_saving` WRITE;
-/*!40000 ALTER TABLE `tbl_saving` DISABLE KEYS */;
-INSERT INTO `tbl_saving` VALUES (3,'Cock',23.00,23.00,'2024-02-01 20:06:00',1);
-/*!40000 ALTER TABLE `tbl_saving` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `tbl_transactions`
 --
 
@@ -68,16 +58,6 @@ CREATE TABLE `tbl_transactions` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tbl_transactions`
---
-
-LOCK TABLES `tbl_transactions` WRITE;
-/*!40000 ALTER TABLE `tbl_transactions` DISABLE KEYS */;
-INSERT INTO `tbl_transactions` VALUES (1,'Demo',10.00,'2023-12-05 22:08:00',NULL,1),(2,'Nutten',20.00,NULL,NULL,1),(3,'Demo 2',10.00,NULL,NULL,1),(4,'Demo 3',10.00,NULL,NULL,1),(5,'Bussines',-20.00,NULL,NULL,1),(6,'Demo',-20.00,'2023-12-04 23:29:00',NULL,1),(7,'Demo',5.00,NULL,NULL,1),(8,'last',-5.00,'2023-12-04 23:29:00',NULL,1),(9,'Demo',10.00,NULL,NULL,1),(11,'Demo',10.00,NULL,NULL,3);
-/*!40000 ALTER TABLE `tbl_transactions` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `tbl_users`
 --
 
@@ -95,16 +75,6 @@ CREATE TABLE `tbl_users` (
   UNIQUE KEY `user_id_UNIQUE` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `tbl_users`
---
-
-LOCK TABLES `tbl_users` WRITE;
-/*!40000 ALTER TABLE `tbl_users` DISABLE KEYS */;
-INSERT INTO `tbl_users` VALUES (1,'Hicham','1234','elkordhicham@gmail.com',23.23,'2023-06-01 17:49:00'),(2,'Jesus','1234','jesus@gmail.com',NULL,NULL),(3,'BrokenMesh','Hallosaid1','elkordhicham@gmail.com',NULL,NULL);
-/*!40000 ALTER TABLE `tbl_users` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -115,4 +85,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-02 17:18:27
+-- Dump completed on 2024-03-02 17:19:54
